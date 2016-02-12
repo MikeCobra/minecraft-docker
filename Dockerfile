@@ -10,4 +10,4 @@ WORKDIR /minecraft
 EXPOSE 25565
 USER minecraft
 
-ENTRYPOINT ["java", "-jar", "/minecraft_server.jar"]
+ENTRYPOINT ["java", "-jar", "/minecraft_server.jar", "nogui"]
