@@ -2,7 +2,7 @@ FROM alpine:3.3
 
 MAINTAINER Mike Clarke <michaelclarkecs@gmail.com>
 
-RUN apk --update add openjdk8 && rm -rf /var/cache/apk/*
+RUN apk --update add openjdk8-jre && rm -rf /var/cache/apk/*
 RUN addgroup minecraft && adduser -s /bin/ash -G minecraft -D minecraft
 
 VOLUME /minecraft
